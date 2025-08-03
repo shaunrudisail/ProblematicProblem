@@ -132,6 +132,12 @@ internal class Program
                     Console.Write("What would you like to add? ");
                     var userInputAns = Console.ReadLine();
                     activities.Add(userInputAns);
+                    
+                    foreach (var activity in activities)
+                    {
+                        Console.Write($"{activity} ");
+                        Thread.Sleep(250);
+                    }
                 }
                 else if (userInput4 == "No".ToLower())
                 {
